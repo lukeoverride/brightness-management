@@ -39,11 +39,11 @@ This code is calibrated with the characteristics of a Varjo XR-3 headset for the
 
 runs the technique with a target brightness equal to 40% of the full brightness, using the standard strategy with constrained optimization, and shows the plot.
 
-`python temporal_brightness_management.py -i sunrisesunset.mp4 -tb 0.8 -c 'xor' -l -p`
+`python temporal_brightness_management.py -i basement.mp4 -tb 0.8 -c 'xor' -l -p`
 
 runs the technique with a target brightness equal to 80% of the full brightness, using the xor strategy, and shows the plot.
 
-###### Notes
+##### Notes
 
 This software is released under the license [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 
