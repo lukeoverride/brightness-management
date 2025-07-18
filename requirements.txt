@@ -1,0 +1,6 @@
+colour==0.1.5
+matplotlib==3.5.0
+numpy==1.21.2
+opencv_python==4.10.0.84
+scipy==1.7.3
+scipy==1.4.1
