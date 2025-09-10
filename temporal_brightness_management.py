@@ -156,7 +156,7 @@ def compute_contrast_difference(write_file):
                 contrast_difference[mult, sub_frame_n] = np.abs(avg_with_xor(lum_contr_orig, lum_contr_deem))
             else:
                 deemed_visible_contrast = compute_visible_contrast(frames[hdr_frame_n], n_lapl_levels, bright_mults[mult])
-                contrast_difference[mult, sub_frame_n] = np.abs(1 - deemed_visible_contrast / orig_visible_contrast_array[sub_frame_n])
+                contrast_difference[mult, sub_frame_n] = np.abs(1 - deemed_visible_contrast / (orig_visible_contrast_array[sub_frame_n] + 1e-10) )
 
             print(mult, sub_frame_n, contrast_difference[mult, sub_frame_n])
             sub_frame_n += 1
